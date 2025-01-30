@@ -38,7 +38,9 @@ jobs:
     needs: Build
     environment: Test
     steps:
-      - run: echo "🧪 Testing ..." 
+      - run: |
+          echo "🧪 Testing ..." 
+          echo "🧪 Environment selected $${{ github.event.inputs.environment }} ..." 
   
   Load-Test:
     runs-on: ubuntu-latest
@@ -47,7 +49,7 @@ jobs:
     environment: Load-Test
     steps:
       - run: |
-          echo "🧪 Testing..."
+          echo "🧪 Testing ..."
           sleep 15
 
   Production:
