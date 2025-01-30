@@ -26,7 +26,7 @@ jobs:
       - name: Chekout
         uses: actions/checkout@v4.2.2 
         # the version referenced is the one of the action applied
-        # branch, tag or key can also be used
+        # branch, tag or the file hash can also be used
 
       - name: List files in the repository
         run: |
