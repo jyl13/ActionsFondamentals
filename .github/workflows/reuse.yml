@@ -10,5 +10,5 @@ jobs:
     needs: [call-workflow]
     steps:
       - run: |
-        echo "Time was ${{ needs.call-workflow.outputs.current-time }}"
-        echo "Person was ${{ needs.call-workflow.outputs.current-person }}"
+          echo "Time was ${{ needs.call-workflow.outputs.current-time }}"
+          echo "Person was ${{ needs.call-workflow.outputs.current-person }}"
